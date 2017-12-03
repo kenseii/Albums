@@ -1,14 +1,13 @@
 import React, { PropTypes, Component } from 'react';
-import { AppRegistry,Text,StatusBar,View } from 'react-native';
+import { Text,StatusBar,View } from 'react-native';
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList'
 
 const App = () => (
-
-    <Header/>
+    <View>
+    <Header headerText={'Albums'} />
+        <AlbumList />
+    </View>
     );
 
-
-// skip this line if using Create React Native App
-//AppRegistry.registerComponent('albums', () => App);
-//
 export default App;

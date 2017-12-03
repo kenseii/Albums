@@ -11,7 +11,7 @@ var _reactNative = require('react-native');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Header = function Header() {
+var Header = function Header(props) {
     var textStyle = styles.textStyle,
         viewStyles = styles.viewStyles;
 
@@ -35,7 +35,7 @@ var Header = function Header() {
                     lineNumber: 11
                 }
             },
-            'Albums'
+            props.headerText
         )
     );
 };

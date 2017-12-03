@@ -2,13 +2,13 @@
 import React, { PropTypes, Component } from 'react';
 import { Text, StyleSheet, View,StatusBar } from 'react-native';
 
-const Header = () => {
+const Header = (props) => {
     const { textStyle, viewStyles } = styles;
 
 
     return (<View style={viewStyles}>
         <StatusBar hidden={true} />
-        <Text style={textStyle}>Albums</Text></View>);
+        <Text style={textStyle}>{props.headerText}</Text></View>);
     };
 
 const styles = {
