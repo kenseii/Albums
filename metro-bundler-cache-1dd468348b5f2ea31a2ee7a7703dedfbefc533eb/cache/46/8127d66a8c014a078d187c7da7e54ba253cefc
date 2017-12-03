@@ -1,5 +1,5 @@
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 var _jsxFileName = '/home/oasis/ReApps/albums/src/components/header.js';
 
@@ -12,16 +12,51 @@ var _reactNative = require('react-native');
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Header = function Header() {
-  return _react2.default.createElement(
-    _reactNative.Text,
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 5
-      }
+    var textStyle = styles.textStyle,
+        viewStyles = styles.viewStyles;
+
+
+    return _react2.default.createElement(
+        _reactNative.View,
+        { style: viewStyles, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 9
+            }
+        },
+        _react2.default.createElement(_reactNative.StatusBar, { hidden: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 10
+            }
+        }),
+        _react2.default.createElement(
+            _reactNative.Text,
+            { style: textStyle, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 11
+                }
+            },
+            'Albums'
+        )
+    );
+};
+
+var styles = {
+    viewStyles: {
+        backgroundColor: '#ececec',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 60,
+        paddingTop: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        elevation: 2,
+        position: 'relative'
     },
-    'Albums'
-  );
+    textStyle: {
+        fontSize: 25
+
+    }
 };
 
 exports.default = Header;
